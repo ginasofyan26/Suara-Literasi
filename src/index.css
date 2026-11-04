@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-lexend {
+  font-family: 'Lexend', system-ui, sans-serif;
+}
+
+.font-comic {
+  font-family: 'Comic Neue', cursive, sans-serif;
+}
+
+.font-jakarta {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* 3D Book & Flip Effect */
+.perspective-1000 {
+  perspective: 1200px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.book-shadow {
+  box-shadow: 
+    0 20px 40px -15px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.05),
+    inset -4px 0 10px rgba(0, 0, 0, 0.04);
+}
+
+.book-spine {
+  box-shadow: inset 8px 0 16px -6px rgba(0, 0, 0, 0.15), inset -8px 0 16px -6px rgba(0, 0, 0, 0.15);
+}
+
+.page-crease {
+  background: linear-gradient(to right, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0) 8%, rgba(0,0,0,0) 92%, rgba(0,0,0,0.08) 100%);
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 0.4; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

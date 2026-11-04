@@ -1,0 +1,10 @@
+{
+  "name": "BukuSuara Cilik",
+  "description": "Platform literasi anak interaktif dengan buku flipbook, panduan intonasi narator, perekam suara mandiri, dan galeri buku suaraku.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
